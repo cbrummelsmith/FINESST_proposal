@@ -1,40 +1,20 @@
 
   
-\documentclass[a4paper, 12pt]{article}
+\documentclass[letterpaper, 12pt]{article}
 
-%\usepackage{microtype}
 \usepackage{natbib}
 \usepackage{hyperref}
 \usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{xspace}
-\usepackage{paralist}
 \usepackage{amsmath}
 \usepackage[dvipsnames]{xcolor}
-\usepackage[final]{pdfpages}
-\usepackage{subfig}
-
-
-%\usepackage{ragged2e}
-\usepackage[format=plain,justification=RaggedRight,font=footnotesize, labelfont=bf]{caption}
+\usepackage[format=plain,justification=RaggedRight, labelfont=bf]{caption}
 \usepackage[style=plain,floatrowsep=qquad]{floatrow}
-
-%\setlength{\parskip}{\baselineskip}
-%\setlength{\parindent}{0em}
-
-%\usepackage{sectsty}
-%\allsectionsfont{\raggedright\bfseries\large}
-%\subsectionfont{\raggedright\normalfont\itshape\normalsize}
-
+\usepackage{sectsty}
 \usepackage[compact]{titlesec}
-
 \usepackage{aas_macros}
 \usepackage{amsmath}
-
 \usepackage[charter]{mathdesign}
-
 \usepackage[margin=1in]{geometry}
-
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
 \renewcommand{\headrulewidth}{0pt}
@@ -59,56 +39,14 @@
 
 \newcommand{\todo}[1]{{\color{red} TODO: #1}}
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% fix a bug in bibtex: only the year in author-year should be a link
-%%
-\RequirePackage{etoolbox}
-\makeatletter
-
-% Patch case where name and year have no delimiter
-\patchcmd{\NAT@citex}
-  {\@citea\NAT@hyper@{\NAT@nmfmt{\NAT@nm}\NAT@date}}
-  {\@citea\NAT@nmfmt{\NAT@nm}\NAT@hyper@{\NAT@date}}
-  {}% Do nothing if patch works
-  {}% Do nothing if patch fails
-
-% Patch case where name and year have basic delimiter
-\patchcmd{\NAT@citex}
-  {\@citea\NAT@hyper@{%
-     \NAT@nmfmt{\NAT@nm}%
-     \hyper@natlinkbreak{\NAT@aysep\NAT@spacechar}{\@citeb\@extra@b@citeb}%
-     \NAT@date}}
-  {\@citea\NAT@nmfmt{\NAT@nm}%
-   \NAT@aysep\NAT@spacechar%
-   \NAT@hyper@{\NAT@date}}
-  {}% Do nothing if patch works
-  {}% Do nothing if patch fails
-
-% Patch case where name and year are separated by a prenote
-\patchcmd{\NAT@citex}
-  {\@citea\NAT@hyper@{%
-     \NAT@nmfmt{\NAT@nm}%
-     \hyper@natlinkbreak{\NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi}%
-       {\@citeb\@extra@b@citeb}%
-     \NAT@date}}
-  {\@citea\NAT@nmfmt{\NAT@nm}%
-   \NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi%
-   \NAT@hyper@{\NAT@date}}
-  {}% Do nothing if patch works
-  {}% Do nothing if patch fails
-
-\makeatother
-%% end bugfix
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Alter some LaTeX defaults for better treatment of figures:
 % See p.105 of "TeX Unbound" for suggested values.
 % See pp. 199-200 of Lamport's "LaTeX" book for details.
 % General parameters, for ALL pages:
-\renewcommand{\topfraction}{0.9}    % max fraction of floats at top
-\renewcommand{\bottomfraction}{0.8} % max fraction of floats at bottom
+%\renewcommand{\topfraction}{0.9}    % max fraction of floats at top
+%\renewcommand{\bottomfraction}{0.8} % max fraction of floats at bottom
 %
 % Parameters for TEXT pages (not float pages):
 \setcounter{topnumber}{2}
@@ -126,13 +64,8 @@
 
 
 \begin{document}
-\fontsize{12}{16}\selectfont
 \author{Corey Brummel-Smith}
 \title{Title}
-%% title
-%\maketitle
-
-
 
 \section{Introduction}
 
@@ -142,7 +75,7 @@ The elements that comprise everything we see around us, in fact, nearly everythi
 
 In some cases, the metallicity of the second stars is set entirely by the yields of the Pop III stars. The stellar life-cycle produces more metals with each successive generation, and thus, today, we see stars with a metal abundance orders of magnitude larger than that of the stars in the early universe. Since the metal abundance of the universe continually grows over time, metallicity is a good indicator of the age of a system. This is why low metallicity stars are the best places to study the chemical composition of the early universe and the first stars. Because of their low metallicity and old age, carbon-enhanced metal-poor (CEMP) stars are of particular interest in stellar archeology. These stars are divided into three groups based on their iron and carbon abundances. Group II and III stars have lower metallicity than Group I, and are comprised of CEMP-no stars, which are CEMP stars with no overabundance of s-process elements \citep{Maeder2015}. 
 
-CEMP-no stars are of particular interest to us because detailed analysis of their chemical composition strongly supports the hypothesis that the pre-stellar clouds in which these stars formed, were enriched by the first-generation stars. \citep{Yoon2016}. \cite{Yoon2016} also point out that more than one class of progenitors for Group II and Group III stars exist, and yet-to-be suggested sites of star formation and metal enrichment may account for the contrasts between Group II and III. \textbf{In our first project, we will investigate a new formation channel, fueled by triggered star formation, that could help explain the differences between Group II and Group III CEMP-no stars.}
+CEMP-no stars are of particular interest to us because detailed analysis of their chemical composition strongly supports the hypothesis that the pre-stellar clouds in which these stars formed, were enriched by the first-generation stars \citep{Yoon2016}. However the details of their formation and their connection to the first stars is not fully understood. \cite{Yoon2016} also point out that more than one class of progenitors for Group II and Group III stars exist, and yet-to-be suggested sites of star formation and metal enrichment may account for the contrasts between Group II and III. \textbf{In our first project, we will investigate a new formation channel, fueled by triggered star formation, that could help explain the origins and differences between Group II and Group III CEMP-no stars.}
 
 
 \section{Proposed Work}
@@ -167,7 +100,7 @@ With each of our triggered star formation simulations, we will perform a detaile
 
 
 \begin{figure}
-  \includegraphics[width=0.49\textwidth]{figures/tsf2}
+  \includegraphics[width=0.6\textwidth]{figures/tsf2}
   \caption{Diagram of the triggered star formation scenario.}
   \label{fig:tsf}
 \end{figure}
@@ -188,7 +121,7 @@ When the Pop III stars explode, energy, momentum, and metals are deposited onto 
 \textbf{Outcome:} Not only will these simulations allow us to study the number of progenitors seeding the second stars, but they will also allow us to determine where the progenitors lived. Pop II stars are either enriched internally, by progenitors within the same halo, or externally by progenitors in a neighboring halo. Our tracer particles will show which of these channels occurs more frequently, and the differences in metal enrichment between the two scenarios. 
 
 \begin{figure}
-  \includegraphics[width=0.49\textwidth]{figures/tracer_final}
+  \includegraphics[width=0.6\textwidth]{figures/tracer_final}
   \caption{Qualitative illustration of metal tracer particles. Black and white colors represent gas density in an example cosmological simulation. Blue, pink, and green highlighted regions represent metal enrichment from the supernova remnants of the progenitor Pop III stars (blue, pink and green stars). Colored points represent tracer particles. Gold stars represent potential sites of second-generation star formation. No stars are actually present in the example simulation. This is just an illustration to convey the idea of this project.}
   \label{fig:tracer}    
 \end{figure}
