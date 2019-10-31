@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[letterpaper, 12pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
@@ -51,39 +51,35 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+%\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
 
-\makeatletter% since there's an at-sign (@) in the command name
-\renewcommand{\@maketitle}{%
-  \parindent=0pt% don't indent paragraphs in the title block
-  \centering
-  {\Large \bfseries\textsc{\@title}}
-  \HRule\par%
-  \textit{\@author \hfill \@date}
-  \par
-}
-\makeatother% resets the meaning of the at-sign (@)
-
-\title{Personal Statement}
-\author{Corey Brummel-Smith}
-\date{}
+%\makeatletter% since there's an at-sign (@) in the command name
+%\renewcommand{\@maketitle}{%
+%  \parindent=0pt% don't indent paragraphs in the title block
+%  \centering
+%  {\Large \bfseries\textsc{\@title}}
+%  \HRule\par%
+%  \textit{\@author \hfill \@date}
+%  \par
+%}
+%\makeatother% resets the meaning of the at-sign (@)
+%
+%\title{Personal Statement}
+%\author{Corey Brummel-Smith}
+%\date{}
 
 \begin{document}
   %\maketitle
+In undergrad, I became possessed with a curiosity to understand the nature of the universe on astronomical scales. Through studying physics and computer science, I became increasingly interested in computational physics simulations, and their power to investigate complex problems in astrophysics, such as star formation and the evolution of the universe as a whole. This set me on a path to pursue my goal of obtaining a Ph.D. in physics, become a professor, and conduct computational astrophysics research at a university or institute. 
 
-From a young age, I have been enamored by the vast beauty of outer space. But it was when I first saw the image of the Hubble Deep Field that I knew my life's work was to study the cosmos. As I studied physics throughout undergrad I became possessed with a curiosity to understand the nature of the universe on astronomical scales. Through studying physics and computer science, I became increasingly interested in computational physics simulations, and their power to investigate the complex, non-linear, problems in modern astrophysics such as star formation and the evolution of the universe as a whole. This set me on a path to pursue my goal of obtaining a Ph.D. in physics, and take the necessary steps to become a professor and conduct research at a university. 
+My drive to learn about numerical simulations led me to my first research position at Florida State University (FSU), where I was introduced to Enzo: An Adaptive Mesh Refinement Code for Astrophysics. Using Enzo simulations, I investigated the magnetic field structure in turbulent molecular clouds to explain how magnetic fields can modulate and suppress star formation. Another key component of this research was studying how magnetic field structure affects the polarization of foreground dust emission, which is important for understanding the polarization of the cosmic microwave background and the cosmology of our universe \citep{Clark2015}. The Center for Undergraduate Research and Academic Engagement at FSU, awarded me with a research grant and invited me to present my work at the President’s Showcase of Undergraduate Research Excellence, which helped hone my ability to speak about physics and astronomy with a non-technical audience.
 
-My drive to learn about numerical simulations led me to my first research position with Dr. David Collins at Florida State University (FSU), where I was introduced to Enzo: An Adaptive Mesh Refinement Code for Astrophysics. Using Enzo simulations, I investigated the magnetic field structure in turbulent molecular clouds to explain how magnetic fields can modulate and suppress star formation. Another key component of this research was studying how magnetic field structure affects the polarization of foreground dust emission, which is important for understanding the polarization of the cosmic microwave background and the cosmology of our universe \citep{Clark2015}. This research helped me develop the technical skills necessary to succeed as a researcher and computational physicist. For this research, the Center for Undergraduate Research and Academic Engagement at FSU, awarded me with a \$4000 grant and invited me to present my work at the President’s Showcase of Undergraduate Research Excellence. This gave me the opportunity to hone my ability to speak about physics and astronomy with a non-technical audience; a skill which will benefit me in the future as I strive toward my goal of becoming a professor and science communicator. 
+Next, I searched for graduate schools that would allow me to dive deeper into my quest to become a computational astrophysicist. This led me to work with Dr. John Wise in the Computational Cosmology Group at the Center for Relativistic Astrophysics at Georgia Tech. My research began by investigating what appeared to be a triggered star formation event in one of his previous Enzo simulations. I discovered a couple of major problems in the simulation. To fix the bugs, I needed to learn about the inner workings of Enzo in greater detail. This understanding is important, not only to fix problems as they arise but also for designing new simulations, like the ones in this proposal. I have attended two Enzo developer workshops where I have contributed to the codebase, reviewed new code modifications, and helped teach new users how to use and edit the code. I am now a contributing author on the most recent Enzo publication \citep{ENZO2019_JOSS}.
 
-At the end of my undergraduate career, I searched for graduate schools that would allow me to dive deeper into my quest to become a computational astrophysicist. This led me to working with Dr. John Wise in the Computational Cosmology group at the Center for Relativistic Astrophysics at Georgia Tech. My research with John began by investigating what appeared to be a triggered star formation event in one of his previous Enzo simulations. I discovered a couple of major problems in the simulations. To fix the bugs, it was necessary for me to learn about the inner workings of Enzo in much greater detail. Over the last two years, I have learned an incredible amount about the Enzo code; from the details of interpolation and flux correction, to how to choose optimal parameters for certain simulations. Knowledge of these details is important, not only to fix problems as they arise, but also to know how to design new simulations, such as the ones in this proposal. I have attended two Enzo developer workshops where I have contributed to the codebase, reviewed new code modifications, and helped teach new users how to use and edit the code. I am now a contributing author on the most recent Enzo publication, which documents recent changes to the code \citep{ENZO2019_JOSS}.
+In 2018, I was selected along with 16 distinguished graduate students from around the world to attend the Kavli Summer Program in Astrophysics. My project involved creating mock x-ray images of simulated galaxy clusters. By comparing our mock observations, and observations of real clusters, we were able to test the effectiveness of our observational techniques in understanding feedback from active galactic nuclei (AGN). Most importantly, this work has led to an ongoing collaboration. In the following year, one of my mentor's collaborators requested my help in preparing a White Paper for The Decadal Survey on Astronomy and Astrophysics. By using different telescope instrument models and exposure times for my mock observations, we demonstrated how a next-generation telescope with an effective area larger than the Chandra observatory, would allow us to probe the physics of AGN feedback on smaller scales than ever before. Specifically, we showed future telescopes will be able to resolve shock waves and other perturbations that would be hidden in Chandra images with a realistic exposure time \citep{WP_Ruszkowski2019}. 
 
-In the summer of 2018, I applied to the Kavli Summer Program in Astrophysics (KSPA), hosted at the Center for Computational Astrophysics (CCA). I was selected to attend this summer school along with 16 other distinguished graduate students from all around the world. With my mentors, Daisuke Nagai, Yuan Li, and Irina Zhuravleva, we worked on project where I created and analyzed mock x-ray images of simulated galaxy clusters. By comparing mock observations of simulated clusters, and real observations of existing ones, we were able to test the effectiveness of our observational techniques in understanding feedback physics from active galactic nuclei (AGN). This unique project helped bridge a gap between simulations and observations. Most importantly, this work has led to an ongoing collaboration, and we have now extended this project far beyond the scope of what we were able to achieve at the KSPA. 
-
-In the following year, because of my work at the KSPA, one of Daisuke's collaborators, requested my help in preparing a White Paper for The Decadal Survey on Astronomy and Astrophysics. I created mock x-ray images of AGN feedback in a simulated galaxy cluster using different telescope instrument models. With these images, we demonstrated how a next-generation telescope with an effective area larger than the Chandra observatory, would allow us to probe the physics of AGN feedback on smaller scales than ever before. Specifically, we showed we would be able to resolve shock waves and other perturbations that would otherwise be hidden in Chandra images with a realistic exposure time \citep{WP_Ruszkowski2019}. 
-
-All together, through graduate schooling and research experience, I've developed the professional and technical skills necessary to succeed as a computational physicist. From these experiences, I've fostered a strong drive and unbreakable will that allow me to do everything it takes to become a professor at a university, and continue to conduct research in computational astrophysics.   
-
+These experiences have strengthened my drive to become a professor and continue researching unsolved problems in astronomy, such as, what were the properties of the first stars, and how can we learn about them today? Through graduate school and my research, I've developed the professional and technical skills necessary to achieve these goals.
 
 \bibliography{personal_statement}
 
